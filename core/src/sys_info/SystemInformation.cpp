@@ -2,7 +2,7 @@
 // Created by root on 03.07.2022.
 //
 
-#include "SystemInformation.h"
+#include "sys_info/SystemInformation.h"
 
 /*main info got from msdn and https://stackoverflow.com/questions/63166/how-to-determine-cpu-and-memory-consumption-from-inside-a-process */
 
@@ -53,7 +53,7 @@ private:
     {
         PdhOpenQuery(NULL, NULL, &cpuQuery);
         // You can also use L"\\Processor(*)\\% Processor Time" and get individual CPU values with PdhGetFormattedCounterArray()
-        PdhAddEnglishCounter(cpuQuery, LPSTR("\\Processor(_Total)\\% Processor Time"), NULL, &cpuTotal);
+        PdhAddEnglishCounter(cpuQuery, L"\\Processor(_Total)\\% Processor Time", NULL, &cpuTotal);
         PdhCollectQueryData(cpuQuery);	    
     }
 

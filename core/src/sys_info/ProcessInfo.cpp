@@ -2,7 +2,7 @@
 // Created by root on 02.07.2022.
 //
 
-#include "ProcessInfo.h"
+#include "sys_info/ProcessInfo.h"
 /*main info got from msdn (winapi) and https://stackoverflow.com/questions/63166/how-to-determine-cpu-and-memory-consumption-from-inside-a-process */
 
 #if  defined(WIN32) | defined(_WIN64)
