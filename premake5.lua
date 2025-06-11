@@ -10,8 +10,7 @@ project "sys_info"
         "./**.cpp",
         "./**.h",
         "./**.cpp",
-        "./**.md",
-        "./**.lua",
+        "./**.md"
     }
     includedirs
     {
